@@ -29,7 +29,7 @@ It will produce something like this :
    WARNING: This is a development server. Do not use it in a production deployment.
    Use a production WSGI server instead.
  * Debug mode: off
- * Running on 'http://127.0.0.1:5000/' (Press CTRL+C to quit)
+ * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
  
 Copy the server url and paste it on a browser. Here it is http://127.0.0.1:5000/ ,
 it will lead you to the homepage, where you will find instructions to search.
