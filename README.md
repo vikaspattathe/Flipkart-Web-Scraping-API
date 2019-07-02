@@ -20,7 +20,7 @@ The api will create a "flipkartproducts.csv" file as output in the root same fol
 ---**How to run**---     
 Run the program as any other flask program:
 
-set FLASK_APP=FlipkartAPI.py
+set FLASK_APP=FlipkartAPI.py   
 Flask run
 
 It will produce something like this : 
@@ -29,7 +29,7 @@ It will produce something like this :
    WARNING: This is a development server. Do not use it in a production deployment.
    Use a production WSGI server instead.
  * Debug mode: off
- * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+ * Running on 'http://127.0.0.1:5000/' (Press CTRL+C to quit)
  
 Copy the server url and paste it on a browser. Here it is http://127.0.0.1:5000/ ,
 it will lead you to the homepage, where you will find instructions to search.
