@@ -16,8 +16,8 @@ The api will create a "flipkartproducts.csv" file as output in the root same fol
 
 **You need BeautifulSoup,flask,tablib,os libraries installed.**
 
----**How to run**---     
 
+---**How to run**---     
 Run the program as any other flask program:
 
 set FLASK_APP=FlipkartAPI.py
