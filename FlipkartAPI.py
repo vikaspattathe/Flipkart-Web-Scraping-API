@@ -37,18 +37,20 @@ def getdata(name):
 
         #for getting price
         price_container=container.findAll("div",{"class" : "_1vC4OE _2rQ-NK"})
-        price = price_container[0].text.replace("₹","Rs ")
-        price=price.replace(",","")                         #replacing comas cause in csv coma seperates different values
-
+        try:
+            price = price_container[0].text.replace("₹","Rs ")
+            price=price.replace(",","")                         #replacing comas cause in csv coma seperates different values
+        except (IndexError, ValueError):
+            pass
+        
         #for getting rating
         rating_container=container.findAll("div",{"class" : "hGSR34"})
         try:                                                #to solve index error in certain cases
             rating = rating_container[0].text + "*"           
             rating=rating.replace(",","")                   #replacing comas cause in csv coma seperates different values
         except (IndexError, ValueError):
-            print("error")
+            pass
 
-   
         f.write(product_name + "," + price + "," + rating + "\n")   #writing to file
 
     f.close()
